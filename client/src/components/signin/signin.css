@@ -24,11 +24,11 @@
 .signinPageForm{
     display:flex;
     flex-direction: column;
-    border:1px;
+    border:0px;
     width:425px;
     height:auto;
     background-color: white;
-    border-radius: 8px;
+
 }
 .signinPageContainerButtonColor{
     color:#4E94F4;
@@ -45,7 +45,7 @@
     background: #FFFFFF 0% 0% no-repeat padding-box;
     border-style: none;
     border-right:1px solid #D1D1D1 ;
-    opacity: 1;
+    opacity:5 ;
 
 }
 .signinPageForm>section>button{
@@ -68,7 +68,7 @@
     margin-right: 20px;
     font: normal normal normal 14px/19px Open Sans;
     color: #04425A;
-    opacity: 1;
+    opacity: 4;
 }
 .signinPageContainer>section>section{
     margin: 0px 80px;
@@ -82,7 +82,7 @@
 
 }
 .signinPageContainer>section>section:first-child>button{
-    border-radius: 8px;
+    border-radius: 3px;
     background-color:#4E94F4;
     color:white;
     font: normal normal bold 16px/22px Open Sans;
@@ -97,7 +97,7 @@
     display:flex;
     align-items: center;
     justify-content: space-around;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .signinPageFormButtonSection>button:first-child{
     color:#4E94F4;
@@ -111,7 +111,8 @@
 .signinPageFormButtonSection>button:nth-child(2){
     color:white;
     background-color: #4E94F4;
-    border: none;
-    border-radius: 6px;
-    font: normal normal 600 12px/26px Open Sans;
+    width: 150px;
+    border: 2;
+    border-radius: 3px;
+    font: normal normal 400 12px/24px Open Sans;
 }
