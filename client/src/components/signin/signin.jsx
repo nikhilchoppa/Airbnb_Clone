@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 const Signin=()=>{
     const navigate=useNavigate();
     const checkSession = () => {
-        axios.get("https://airbnbcloneserver.onrender.com/check", { withCredentials:true }).then((res)=>{
+        axios.get("", { withCredentials:true }).then((res)=>{
             if(res.data.msg==="vendor"){
                 navigate("/view");
             }else if(res.data.msg==="user"){
@@ -26,7 +26,7 @@ const Signin=()=>{
        {
         if(vendor){
 
-            axios.post("https://eventproposalserver.onrender.com/vendors/login",form,{withCredentials:true}).then((response)=>{
+            axios.post("mongodb://localhost:27017/event-proposal/vendors",form,{withCredentials:true}).then((response)=>{
                 if(response.data.msg==="Success")
                 {
                  Swal.fire({
@@ -75,7 +75,7 @@ const Signin=()=>{
                 }
          });        }
         else{
-            axios.post("https://eventproposalserver.onrender.com/users/login",form,{withCredentials:true}).then((response)=>{
+            axios.post("mongodb://localhost:27017/event-proposal/users",form,{withCredentials:true}).then((response)=>{
                 if(response.data.message==="user logged in")
                 {
                  Swal.fire({
@@ -150,15 +150,15 @@ const Signin=()=>{
     return(
         <>
          <article className="signinPageContainer">
-       <h1>LOGO</h1>
+       <h1>Event Booking</h1>
         <section>
             <section>
-                <p>Create Your own <br/> Proposal <br/> Or <br/> Choose Proposal of <br/> your choice</p>
+                <p>Create your own <br/> Listing <br/> Or <br/> Book a place for <br/> your event</p>
             </section>
             <section>
                 <form className="signinPageForm">
                 <section>
-                        <button className={vendor?"signinPageContainerButtonColor":null} onClick={dataBaseToggleHandler}>vendor</button>
+                        <button className={vendor?"signinPageContainerButtonColor":null} onClick={dataBaseToggleHandler}>Vendor</button>
                         <button className={vendor?null:"signinPageContainerButtonColor"} onClick={dataBaseToggleHandler}>User</button>
                     </section>
                     <h3>Signin in your account</h3>

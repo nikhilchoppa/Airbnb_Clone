@@ -88,7 +88,7 @@ const registerHandler=(e)=>{
                 password:form.password
             }
 
-             axios.post("https://airbnbserver.onrender.com/vendors/register",data).then((response)=>{
+             axios.post("mongodb://localhost:27017/event-proposal/vendors",data).then((response)=>{
                 if(response.data.message==="registered successfully")
                {
                 Swal.fire({
@@ -144,7 +144,7 @@ const registerHandler=(e)=>{
                 password:form.password
             }
 
-             axios.post("https://airbnbcloneserver.onrender.com/users/register",data).then((response)=>{
+             axios.post("mongodb://localhost:27017/event-proposal/users",data).then((response)=>{
                if(response.data.message==="registered successfully")
                {
                 Swal.fire({
@@ -217,15 +217,15 @@ const dataBaseToggleHandler=(e)=>{
     return(
         <>
        <article className="registrationPageContainer">
-       <h1>EVP</h1>
+       <h1>Event Booking</h1>
         <section>
             <section>
-                <p>Create Your own <br/> Proposal <br/> Or <br/> Choose Proposal of <br/> your choice</p>
+                <p>Create your own <br/> Listing <br/> Or <br/> Book a place for <br/> your event</p>
             </section>
             <section>
                 <form className="registrationPageForm">
                     <section>
-                        <button className={vendor?"registrationPageContainerButtonColor":null} onClick={dataBaseToggleHandler}>vendor</button>
+                        <button className={vendor?"registrationPageContainerButtonColor":null} onClick={dataBaseToggleHandler}>Vendor</button>
                         <button className={vendor?null:"registrationPageContainerButtonColor"} onClick={dataBaseToggleHandler}>User</button>
                     </section>
                     <h3>Register in your account</h3>
