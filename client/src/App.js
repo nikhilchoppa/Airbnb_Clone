@@ -8,8 +8,8 @@ function App() {
     <>
     <BrowserRouter>
           <Routes>
-            <Route path="/" element={<Signin />} />
-            <Route path="/register" element={<Register/>} />
+            <Route path="/" element={<Signin />}/>
+            <Route path="/register" element={<Register/>}/>
           </Routes>
           </BrowserRouter>
     </>

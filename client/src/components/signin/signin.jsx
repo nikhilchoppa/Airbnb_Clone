@@ -7,7 +7,7 @@ import Swal from "sweetalert2";
 const Signin=()=>{
     const navigate=useNavigate();
     const checkSession = () => {
-        axios.get("https://eventproposalserver.onrender.com/check", { withCredentials:true }).then((res)=>{
+        axios.get("https://airbnbcloneserver.onrender.com/check", { withCredentials:true }).then((res)=>{
             if(res.data.msg==="vendor"){
                 navigate("/view");
             }else if(res.data.msg==="user"){

@@ -88,7 +88,7 @@ const registerHandler=(e)=>{
                 password:form.password
             }
 
-             axios.post("https://eventproposalserver.onrender.com/vendors/register",data).then((response)=>{
+             axios.post("https://airbnbserver.onrender.com/vendors/register",data).then((response)=>{
                 if(response.data.message==="registered successfully")
                {
                 Swal.fire({
@@ -103,12 +103,12 @@ const registerHandler=(e)=>{
                     }
                   })
                }
-               else if(response.data.message==="Vendor already exist")
+               else if(response.data.message==="vendor email already exist")
                {
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'Vendor email already registered',
+                    title: 'email already registered',
                     showConfirmButton: true,
                     confirmButtonText: 'ok',
                   })
@@ -118,7 +118,7 @@ const registerHandler=(e)=>{
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'Vendor mobile number already registered',
+                    title: 'mobile number already registered',
                     showConfirmButton: true,
                     confirmButtonText: 'ok',
                   })
@@ -144,7 +144,7 @@ const registerHandler=(e)=>{
                 password:form.password
             }
 
-             axios.post("https://eventproposalserver.onrender.com/users/register",data).then((response)=>{
+             axios.post("https://airbnbcloneserver.onrender.com/users/register",data).then((response)=>{
                if(response.data.message==="registered successfully")
                {
                 Swal.fire({
@@ -164,7 +164,7 @@ const registerHandler=(e)=>{
                 Swal.fire({
                     position: 'center',
                     icon: 'error',
-                    title: 'User email already registered',
+                    title: 'user email already registered',
                     showConfirmButton: true,
                     confirmButtonText: 'ok',
                   })
