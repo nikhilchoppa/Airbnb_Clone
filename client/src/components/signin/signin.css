@@ -9,6 +9,7 @@
     background-position: 0px;
     background-repeat: no-repeat;
 
+
 }
 .signinPageContainer>h1{
     color:white;
@@ -20,6 +21,7 @@
     display:flex;
     justify-content: space-between;
     margin-top: 10%;
+
 }
 .signinPageForm{
     display:flex;
@@ -28,6 +30,7 @@
     width:425px;
     height:auto;
     background-color: white;
+    border-radius:10px;
 
 }
 .signinPageContainerButtonColor{
@@ -35,17 +38,17 @@
 }
 
 .signinPageForm>section:first-child{
-    border:1px solid #D1D1D1;
-    border-radius: 8px;
+    /*border:1px solid #D1D1D1;*/
+
 }
 .signinPageForm>section>button{
     width:50%;
-    margin-top: 0px;
+    margin-top: 10px;
     height:30px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
-    border-style: none;
+    border-style:none;
     border-right:1px solid #D1D1D1 ;
-    opacity:5 ;
+    opacity:1 ;
 
 }
 .signinPageForm>section>button{
@@ -55,6 +58,7 @@
     margin-top: 25px;
     margin-left: 20px;
     font: normal normal normal 22px/30px Open Sans;
+    border-radius:10px;
 }
 .signinPageForm>input{
     margin:10px 20px;
