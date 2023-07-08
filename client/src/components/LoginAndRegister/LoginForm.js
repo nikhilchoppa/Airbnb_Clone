@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getCurrentUser, getToken, setCurrentUser, setToken } from "../../utills/storage-utills";
 import { useNavigate } from "react-router-dom";
+//server path should be set
 import { loginToAccount } from "../../utills/api-utill";
 import { toast } from "react-toastify";
 export default function LoginForm({ setIsLog, setIsreset }) {
