@@ -1,19 +1,22 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from "react";
-import Register from './components/register/register';
-import Signin from './components/signin/signin';
-function App() {
-  const [update, setUpdate] = useState("");
-  return (
-    <>
-    <BrowserRouter>
-          <Routes>
-            <Route path="/" element={<Signin />}/>
-            <Route path="/register" element={<Register/>}/>
-          </Routes>
-          </BrowserRouter>
-    </>
-  );
+import React from 'react'
+import "./styles/app.css";
+import "./styles/home.css";
+import "./styles/loginForm.css";
+import "./styles/header.css";
+import "./styles/updateDp.css";
+import "./styles/vendorProposal.css";
+import "./styles/eachProposal.css";
+import "./styles/newProposal.css";
+import "./styles/eachProposal.css"
+import { AppRouter } from './routers/AppRouter';
+import UserContext from './contexts/UserContext';
+
+const App = () => {
+  return <>
+    <UserContext>
+      <AppRouter />
+    </UserContext>
+  </>
 }
 
 export default App;
