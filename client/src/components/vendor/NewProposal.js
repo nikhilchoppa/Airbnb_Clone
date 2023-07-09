@@ -116,7 +116,7 @@ export function NewProposal({ setCreate, onAdd, onUpdate, edit, onEdit }) {
                                     setError(ex => ({ ...ex, placeOfEvent: "" }));
                                     }}>
                                     <option value={"Select"} >Select</option>
-                                    <option value={"Tamilnadu"} >Tamilnadu</option>
+                                    <option value={"Vijayawada"} >Vijayawada</option>
                                     <option value={"Bengaluru"} >Bengaluru</option>
                                     <option value={"Hydrabad"} >Hydrabad</option>
                                     <option value={"Kerala"} >Kerala</option>
