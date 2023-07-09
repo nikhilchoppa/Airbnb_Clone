@@ -5,7 +5,7 @@ const Vendor = require("../models/vendor");
 const {GrindSBucket, MongoClient} = require("mongodb");
 const mongoClient = new MongoClient(process.env.DB_URL);
 
-const updateDPUser = async (req, res) => {
+const updateDpUser = async (req, res) => {
     try {
         let user = await User.findByIdAndUpdate(req.params.id, { profilePic: req.file.filename }, { new: true});
         const { name, email, contact, isUser, selected, _id, profilePic } = user;
