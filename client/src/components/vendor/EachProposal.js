@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import { deleteProposalByVendor_api } from "../../utills/api-utill";
 import { toast } from "react-toastify";

@@ -120,6 +120,9 @@ export function NewProposal({ setCreate, onAdd, onUpdate, edit, onEdit }) {
                                     <option value={"Bengaluru"} >Bengaluru</option>
                                     <option value={"Hydrabad"} >Hydrabad</option>
                                     <option value={"Kerala"} >Kerala</option>
+                                    <option value={"Tamil Nadu"} >Tamil Nadu</option>
+                                    <option value={"Delhi"} >Delhi</option>
+                                    <option value={"Mumbai"} >Mumbai</option>
                                 </select>
                             </div>
                             <div className="type">
@@ -151,6 +154,7 @@ export function NewProposal({ setCreate, onAdd, onUpdate, edit, onEdit }) {
                                     <option value={"Reception"} >Reception</option>
                                     <option value={"Charity"} >Charity</option>
                                     <option value={"Party"} >Party</option>
+                                    <option value={"Catering"} >Catering</option>
                                     <option value={"Product launch"} >Product launch</option>
                                 </select>
                             </div>
