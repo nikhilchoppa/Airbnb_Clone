@@ -1,7 +1,7 @@
 import axios from "axios";
 import { getToken } from "./storage-utills";
 
-
+//export const BASE_URL = "https://eventproposal-server.onrender.com";
 export const BASE_URL = "http://localhost:5010";
 
 //TO GET ALL PROPOSALS
