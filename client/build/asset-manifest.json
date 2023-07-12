@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "./static/css/main.e432a41e.css",
+    "main.js": "./static/js/main.dc71ce9a.js",
+    "static/media/party-people-enjoy-concert-at-festival-summer-DHDMPWH.jpg": "./static/media/party-people-enjoy-concert-at-festival-summer-DHDMPWH.bc464b630d0e6d7e8bc8.jpg",
+    "index.html": "./index.html",
+    "main.e432a41e.css.map": "./static/css/main.e432a41e.css.map",
+    "main.dc71ce9a.js.map": "./static/js/main.dc71ce9a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e432a41e.css",
+    "static/js/main.dc71ce9a.js"
+  ]
+}
