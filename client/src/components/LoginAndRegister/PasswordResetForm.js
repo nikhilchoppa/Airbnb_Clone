@@ -69,6 +69,7 @@ export default function PasswordResetForm({ setIsreset }) {
     }
     setBoo(false);
     passwordReset(loginUser, option ? "vendor" : "user").then((res) => {
+      console.log(res);
       if (res.status === "Success") {
         toast.success("Password reset Successfull", {
           position: "bottom-right",
@@ -83,6 +84,10 @@ export default function PasswordResetForm({ setIsreset }) {
         setBoo(true);
         setIsCheck(false);
         setIsreset(true);
+      } else {
+        setBoo(true);
+        if (res.field) setError((ex) => ({ ...ex, [res.field]: res.message }));
+        else alert("Failed to reset, try again!!");
       }
     });
   }
