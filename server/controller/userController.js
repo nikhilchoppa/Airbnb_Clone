@@ -95,6 +95,8 @@ const userPasswordReset = async (req, res) => {
     let { password, email } = req.body;
     try {
         let user = await User.findOne({ email });
+        if (!user) return res.status(400).json({ status: "Failed", field: "email", message: "User not found!!" });
+
         let hashedPassword = await bcrypt.hash(password, 10);
         await User.findByIdAndUpdate(user._id, {password : hashedPassword});
         res.status(201).json({ status: "Success" });
@@ -151,6 +153,8 @@ const vendorPasswordReset = async (req, res) => {
     let { password, email } = req.body;
     try {
         let user = await Vendor.findOne({ email });
+        if (!user) return res.status(400).json({ status: "Failed", field: "email", message: "User not found!!" });
+
         let hashedPassword = await bcrypt.hash(password, 10);
         await Vendor.findByIdAndUpdate(user._id, {password : hashedPassword});
         res.status(201).json({ status: "Success" });

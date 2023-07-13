@@ -48,7 +48,12 @@ export function newProposal_api(data) {
         },
         body: data
     })
-        .then(res => res.json())
+        .then(res => {
+          if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+          }
+          return res.json();
+        })
         .catch(err => alert("FROM SERVER : " + err.message));
 }
 
@@ -101,7 +106,12 @@ export function registerAnAccount(data, boolean) {
         },
         body: JSON.stringify(data)
     })
-        .then(res => res.json())
+        .then(res => {
+          if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+          }
+          return res.json();
+        })
         .catch(err => alert("FROM SERVER : " + err.message));
 }
 
@@ -139,7 +149,12 @@ export function passwordReset(data, boolean) {
         },
         body: JSON.stringify(data)
     })
-        .then(res => res.json())
+        .then(res => {
+          if (!res.ok) {
+            throw new Error(`HTTP error! status: ${res.status}`);
+          }
+          return res.json();
+        })
         .catch(err => alert("FROM SERVER : " + err.message));
 }
 

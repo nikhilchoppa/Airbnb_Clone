@@ -60,7 +60,6 @@ export default function RegisterForm({ setIsLog }) {
                     setIsLog(true);
                 }
                 else {
-                    console.log(res);
                     setBoo(true);
                     if (res.field) setError(ex => ({ ...ex, [res.field]: res.message }));
                     else alert("Failed to log-in, try again!!");
