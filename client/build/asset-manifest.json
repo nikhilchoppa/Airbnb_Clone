@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "./static/css/main.e432a41e.css",
-    "main.js": "./static/js/main.7f90ef74.js",
+    "main.js": "./static/js/main.c6adccad.js",
     "static/media/party-people-enjoy-concert-at-festival-summer-DHDMPWH.jpg": "./static/media/party-people-enjoy-concert-at-festival-summer-DHDMPWH.bc464b630d0e6d7e8bc8.jpg",
     "index.html": "./index.html",
     "main.e432a41e.css.map": "./static/css/main.e432a41e.css.map",
-    "main.7f90ef74.js.map": "./static/js/main.7f90ef74.js.map"
+    "main.c6adccad.js.map": "./static/js/main.c6adccad.js.map"
   },
   "entrypoints": [
     "static/css/main.e432a41e.css",
-    "static/js/main.7f90ef74.js"
+    "static/js/main.c6adccad.js"
   ]
 }
